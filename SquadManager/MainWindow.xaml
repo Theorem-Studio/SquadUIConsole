@@ -1,0 +1,24 @@
+﻿<Window x:Class="SquadManager.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SquadManager"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TabControl HorizontalAlignment="Center" Height="435" VerticalAlignment="Center" Width="800">
+            <TabItem Header="主页">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+            <TabItem Header="在线玩家" Margin="-2,0,-2,0" VerticalAlignment="Bottom">
+                <Grid Background="#FFE5E5E5">
+                    <Border CornerRadius="10" Background="DeepSkyBlue" Margin="12,11,702,357" Height="40">
+                        <Image Height="NaN" Margin="10,10,50,10" Source="/人数.png" Stretch="Fill" Width="20"/>
+                    </Border>
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>

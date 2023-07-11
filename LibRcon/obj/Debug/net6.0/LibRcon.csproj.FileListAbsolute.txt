@@ -1,0 +1,12 @@
+D:\Documents\Code\SquadUIConsole\LibRcon\bin\Debug\net6.0\LibRcon.deps.json
+D:\Documents\Code\SquadUIConsole\LibRcon\bin\Debug\net6.0\LibRcon.dll
+D:\Documents\Code\SquadUIConsole\LibRcon\bin\Debug\net6.0\LibRcon.pdb
+D:\Documents\Code\SquadUIConsole\LibRcon\obj\Debug\net6.0\LibRcon.csproj.AssemblyReference.cache
+D:\Documents\Code\SquadUIConsole\LibRcon\obj\Debug\net6.0\LibRcon.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documents\Code\SquadUIConsole\LibRcon\obj\Debug\net6.0\LibRcon.AssemblyInfoInputs.cache
+D:\Documents\Code\SquadUIConsole\LibRcon\obj\Debug\net6.0\LibRcon.AssemblyInfo.cs
+D:\Documents\Code\SquadUIConsole\LibRcon\obj\Debug\net6.0\LibRcon.csproj.CoreCompileInputs.cache
+D:\Documents\Code\SquadUIConsole\LibRcon\obj\Debug\net6.0\LibRcon.dll
+D:\Documents\Code\SquadUIConsole\LibRcon\obj\Debug\net6.0\refint\LibRcon.dll
+D:\Documents\Code\SquadUIConsole\LibRcon\obj\Debug\net6.0\LibRcon.pdb
+D:\Documents\Code\SquadUIConsole\LibRcon\obj\Debug\net6.0\ref\LibRcon.dll

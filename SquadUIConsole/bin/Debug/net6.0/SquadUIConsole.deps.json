@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "SquadUIConsole/1.0.0": {
+        "dependencies": {
+          "LibRcon": "1.0.0"
+        },
+        "runtime": {
+          "SquadUIConsole.dll": {}
+        }
+      },
+      "LibRcon/1.0.0": {
+        "runtime": {
+          "LibRcon.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SquadUIConsole/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LibRcon/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
