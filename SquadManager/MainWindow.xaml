@@ -5,17 +5,53 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SquadManager"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="478" Width="826">
     <Grid>
         <TabControl HorizontalAlignment="Center" Height="435" VerticalAlignment="Center" Width="800">
             <TabItem Header="主页">
-                <Grid Background="#FFE5E5E5"/>
-            </TabItem>
-            <TabItem Header="在线玩家" Margin="-2,0,-2,0" VerticalAlignment="Bottom">
                 <Grid Background="#FFE5E5E5">
-                    <Border CornerRadius="10" Background="DeepSkyBlue" Margin="12,11,702,357" Height="40">
-                        <Image Height="NaN" Margin="10,10,50,10" Source="/人数.png" Stretch="Fill" Width="20"/>
-                    </Border>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="21*"/>
+                        <ColumnDefinition Width="244*"/>
+                    </Grid.ColumnDefinitions>
+                </Grid>
+            </TabItem>
+            <TabItem Header="在线玩家" Margin="0,0,-2,0" VerticalAlignment="Center" HorizontalAlignment="Right" Width="64">
+                <Grid Background="#FFE5E5E5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="310*"/>
+                        <ColumnDefinition Width="87*"/>
+                    </Grid.ColumnDefinitions>
+                    <Border CornerRadius="3" Background="DeepSkyBlue" Margin="12,11,528,357" Height="40"/>
+                    <Image Height="NaN" Margin="21,21,579,367" Source="人数.png" Stretch="Fill" Width="20"/>
+                    <Label x:Name="PlayerCount" Content="0&#xD;&#xA;" HorizontalAlignment="Left" Height="37" Margin="41,14,0,0" VerticalAlignment="Top" Width="46" RenderTransformOrigin="0.55,0.229" HorizontalContentAlignment="Center" FontSize="20"/>
+                    <TextBox HorizontalAlignment="Left" Height="40" Margin="97,11,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="266"
+                             Block.TextAlignment="Center"
+                             VerticalContentAlignment="Center" FontSize="22"
+                             local:PlaceholderManager.Placeholder="昵称/SteamID（回车搜索）">
+                        <TextBox.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="3"></Setter>
+                            </Style>
+                        </TextBox.Resources>
+                    </TextBox>
+                    <ComboBox HorizontalAlignment="Left" Height="40" Margin="368,11,0,0" VerticalAlignment="Top" Width="101">
+                    </ComboBox>
+                    <ComboBox HorizontalAlignment="Left" Height="40" Margin="474,11,0,0" VerticalAlignment="Top" Width="101"/>
+                    <Button Content="清空" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="41" Margin="580,10,0,0" VerticalAlignment="Top" Width="92" FontSize="22"/>
+                    <Button Content="刷新" HorizontalAlignment="Left" Height="41" Margin="57,10,0,0" VerticalAlignment="Top" Width="92" FontSize="22" Grid.Column="1"/>
+                    <DataGrid Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="342" Margin="10,56,0,0" VerticalAlignment="Top" Width="774" ColumnWidth="*">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="ID"></DataGridTextColumn>
+                            <DataGridTextColumn Header="SteamID"></DataGridTextColumn>
+                            <DataGridTextColumn Header="昵称"></DataGridTextColumn>
+                            <DataGridTextColumn Header="时长"></DataGridTextColumn>
+                            <DataGridTextColumn Header="阵营"></DataGridTextColumn>
+                            <DataGridTextColumn Header="小队"></DataGridTextColumn>
+                            <DataGridTextColumn Header="兵种"></DataGridTextColumn>
+                            <DataGridComboBoxColumn Header="操作"></DataGridComboBoxColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>
                 </Grid>
             </TabItem>
         </TabControl>
